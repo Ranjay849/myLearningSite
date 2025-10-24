@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+    color: rgb(235, 235, 235);
+    height: 100vh;
+}
+
+nav {
+    background-color: rgba(30, 30, 30, 0.95);
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+}
+
+#right-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 100px;
+}
+
+#right-login img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
