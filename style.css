@@ -12,23 +12,81 @@ body {
 }
 
 nav {
-    background-color: rgba(30, 30, 30, 0.95);
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px 30px;
+  background-color: rgba(24, 24, 24, 0.95);
+  width: 80%;
+  margin: 30px auto;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+#left-branding {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-radius: 100px;
+    gap: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+#left-branding:hover {
+    transform: scale(1.05);
+}
+
+#left-branding img {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0 0 4px rgba(86, 191, 247, 0.6)) brightness(0) invert(1);
+}
+
+#left-branding h1 {
+    font-size: 1.6rem;
+    color: rgba(230, 230, 230);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#middle-links {
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 100px;
+  padding: 10px 25px;
+  display: flex;
+  gap: 10px;
+  border: 1px solid rgb(35, 35, 35, 0.9);
+}
+
+#middle-links a {
+  color: rgb(235, 235, 235);
+  text-decoration: none;
+  font-size: 17px;
+  padding: 8px 15px;
+  border-radius: 50px;
+  transition: all 0.3s, color 0.3s;
+}
+
+#middle-links a:hover {
+  background-color: rgba(86, 191, 247, 0.15);
+  color: rgb(86, 191, 247);
+  transform: translateY(-2px);
 }
 
 #right-login {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px;
-    background-color: #333;
+    padding: 12px 20px;
+    background-color: rgb(30, 30, 30, 0.95);
     border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+#right-login:hover {
+    transform: scale(1.05);
+    border: 1px solid rgb(50, 50, 50, 0.9);
 }
 
 #right-login img{
@@ -36,3 +94,161 @@ nav {
     height: 30px;
     border-radius: 50%;
 }
+
+#right-login #drop-img {
+    width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+#right-login #drop-img.rotate {
+  transform: rotate(180deg);
+}
+
+#login-card {
+  width: 280px;
+  background: rgba(25, 25, 25, 0.95);
+  color: rgb(235, 235, 235);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: absolute;
+  top: 110px;
+  right: 160px;
+  z-index: 1000;
+  display: none;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+#login-card.show {
+  display: block;
+}
+
+#profile-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#profile-header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid rgb(100, 200, 255);
+}
+
+#profile-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#profile-header p {
+  font-size: 0.85rem;
+  color: rgb(170, 170, 170);
+  margin: 3px 0 0 0;
+}
+
+.role-badge {
+  display: inline-block;
+  background-color: rgb(130, 80, 255);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin: 10px 55px;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+}
+
+#profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+  font-size: 0.95rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+}
+
+.profile-item img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+}
+
+.profile-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logout {
+  color: rgb(255, 100, 100);
+}
+
+.logout:hover {
+  background-color: rgba(255, 100, 100, 0.15);
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  #home h1 {
+    max-width: 400px;
+    margin-bottom: 15px;
+    color: #e6e6e6;
+  }
+
+  #home h2 {
+    font-size: 50px;
+    max-width: 650px;
+    margin-bottom: 25px;
+    color: #d9d9d9;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  #home p {
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 15px;
+    color: #bfbfbf;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+#home .btn {
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: #444444;
+    color: #f5f5f5;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease-in;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+#home .btn:hover {
+    background-color: #666666;
+    transform: scale(1.05);
+}
+
+/* Tutorials Section */
