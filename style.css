@@ -364,3 +364,124 @@ nav {
 }
 
 /* About Section */
+#about {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#about h2 {
+  font-size: 60px;
+  color: #e6e6e6;
+  margin-bottom: 10px;
+}
+
+#about h2 span {
+  color: deepskyblue;
+}
+
+#about>p {
+  color: #bfbfbf;
+  margin-bottom: 50px;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease-in;
+}
+
+#about-me:hover {
+  transform: scale(1.02);
+}
+
+#about-me #about-image img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 3px solid royalblue;
+  background: radial-gradient(circle at 30% 30%, #5b3aff, #1e1e1e 80%);
+  box-shadow: 0 0 30px rgba(93, 61, 255, 0.8);
+}
+
+#about-elements {
+  text-align: left;
+}
+
+#about-elements h3 {
+  font-size: 40px;
+}
+
+#about-elements img {
+  width: 25px;
+  height: 25px;
+}
+
+#about-elements .badge-one, .badge-two {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 100px;
+  background-color: rgba(50, 20, 150, 0.8);
+  margin-top: 10px;
+}
+
+#about-elements .badge-two {
+  background-color: rgba(39, 39, 39, 0.9);
+  border: 1px solid rgba(50, 50, 50, 0.5);
+}
+
+#about-elements #tiny-button>span {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: rgba(93, 61, 200, 0.8);
+  border-radius: 100px;
+  transition: transform 0.3s ease-in;
+}
+
+#about-elements #tiny-button>span:hover {
+  transform: scale(1.05);
+}
+
+#about-elements p {
+  color: #ccc;
+  margin-top: 20px;
+  width: 500px;
+  text-align: justify;
+}
+
+#about-elements .primary-btn, .secondary-btn {
+  display: inline-block;
+  background-color: royalblue;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin: 30px 15px 0 0;
+  transition: background-color 0.3s ease-in;
+}
+
+#about-elements .primary-btn:hover {
+  background-color: dodgerblue;
+}
+
+#about-elements .secondary-btn {
+  background-color: rgba(50, 50, 50, 0.9);
+  border: 2px solid rgb(75, 75, 75, 0.9);
+  transition: all 0.3s ease-in;
+  color: #5b3aff;
+}
+
+#about-elements .secondary-btn:hover {
+  background-color: rgba(25, 25, 25, 0.95);
+  border-color: #5b3aff;
+}
