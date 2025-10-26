@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(18, 18, 18);
-    color: rgb(235, 235, 235);
-    height: 100vh;
-    position: relative;
+  background-color: rgb(18, 18, 18);
+  color: rgb(235, 235, 235);
+  height: 100vh;
+  position: relative;
 }
 
 nav {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(34, 34, 33);
   padding: 10px 30px;
   display: flex;
   justify-content: space-between;
@@ -26,37 +26,37 @@ nav {
 }
 
 #left-branding {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
 }
 
 #left-branding:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #left-branding img {
-    width: 30px;
-    height: 30px;
-    filter: drop-shadow(0 0 4px rgba(86, 191, 247, 0.6)) brightness(0) invert(1);
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 0 4px rgba(86, 191, 247, 0.6)) brightness(0) invert(1);
 }
 
 #left-branding h1 {
-    font-size: 1.6rem;
-    color: rgba(230, 230, 230);
-    font-weight: 700;
-    letter-spacing: 0.5px;
+  font-size: 1.6rem;
+  color: rgba(230, 230, 230);
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 #middle-links {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(37, 37, 37, 0.9);
   border-radius: 100px;
   padding: 10px 25px;
   display: flex;
   gap: 10px;
-  border: 1px solid rgb(35, 35, 35, 0.9);
+  border: 1px solid rgba(50, 50, 50, 0.9);
 }
 
 #middle-links a {
@@ -75,30 +75,30 @@ nav {
 }
 
 #right-login {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    background-color: rgb(0, 0, 0, 0.9);
-    border: 1px solid rgb(35, 35, 35, 0.9);
-    border-radius: 100px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: rgba(37, 37, 37, 0.9);
+  border: 1px solid rgba(50, 50, 50, 0.9);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
 }
 
 #right-login:hover {
-    transform: scale(1.05);
-    border: 1px solid rgb(50, 50, 50, 0.9);
+  transform: scale(1.05);
+  border: 1px solid rgb(50, 50, 50, 0.9);
 }
 
-#right-login img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+#right-login img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 #right-login #drop-img {
-    width: 18px;
+  width: 18px;
   height: 18px;
   transition: transform 0.3s ease;
   filter: brightness(0) invert(1);
@@ -112,6 +112,7 @@ nav {
   width: 280px;
   background: rgba(25, 25, 25, 0.95);
   color: rgb(235, 235, 235);
+  border: 1px solid rgba(50, 50, 50, 0.9);
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -208,49 +209,51 @@ nav {
 
 /* Home Section */
 #home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 80px 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #3b3b3b, #111112);
+}
 
-  #home h1 {
-    max-width: 400px;
-    margin-bottom: 15px;
-    color: #e6e6e6;
-  }
+#home h1 {
+  max-width: 400px;
+  margin-bottom: 15px;
+  color: #e6e6e6;
+}
 
-  #home h2 {
-    font-size: 50px;
-    max-width: 650px;
-    margin-bottom: 25px;
-    color: #d9d9d9;
-    font-family: 'Great Vibes', cursive;
-  }
+#home h2 {
+  font-size: 50px;
+  max-width: 650px;
+  margin-bottom: 25px;
+  color: #d9d9d9;
+  font-family: "Great Vibes", cursive;
+}
 
-  #home p {
-    font-size: 18px;
-    max-width: 600px;
-    margin-bottom: 15px;
-    color: #bfbfbf;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+#home p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 15px;
+  color: #bfbfbf;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
 #home .btn {
-    padding: 10px 25px;
-    text-decoration: none;
-    background-color: #444444;
-    color: #f5f5f5;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease-in;
-    font-family: cursive;
-    font-weight: 500;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #444444;
+  color: #f5f5f5;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease-in;
+  font-family: cursive;
+  font-weight: 500;
 }
 
 #home .btn:hover {
-    background-color: #666666;
-    transform: scale(1.05);
+  background-color: #666666;
+  transform: scale(1.05);
 }
 
 /* Tutorials Section */
@@ -259,64 +262,105 @@ nav {
 }
 
 #tutorials h2 {
+  font-size: 60px;
   color: #e6e6e6;
   margin-bottom: 10px;
 }
 
+#tutorials h2 span {
+  color: deepskyblue;
+}
+
 #tutorials p {
   color: #bfbfbf;
-  margin-bottom: 40px;
+}
+
+#tutorials .lines {
+  width: 150px;
+  height: 5px;
+  margin: 30px auto;
+  background-color: deepskyblue;
+  border-radius: 10px;
 }
 
 .tutorials-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: stretch;
+  padding: 20px 20px;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
-.tutorial-card {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 300px;
+#tutorials-card {
+  background-color: rgb(50, 50, 50, 0.9);
+  color: #f1f1f1;
+  border-radius: 14px;
+  width: 340px;
   text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
 }
 
-.tutorial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+#tutorials-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.08);
 }
 
-.tutorial-img {
+#tutorials-card img {
   width: 100%;
   object-fit: cover;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.tutorial-card h3 {
   margin-bottom: 15px;
-  color: #fdfdfd;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-.tutorial-card p {
-  font-size: 14px;
-  color: #cccccc;
+#tutorials-card h3 {
+  font-size: 1.1rem;
+  color: #fafafa;
+  margin-bottom: 10px;
+}
+
+#tutorials-card h4 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #cfcfcf;
+  margin-bottom: 15px;
+}
+
+#tutorials-card p {
+  font-size: 0.95rem;
+  color: #b8b8b8;
+  line-height: 1.5;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
-.tutorial-card .btn {
-  padding: 8px 20px;
+#tutorials-card #tiny-button span {
+  background-color: rgb(34, 34, 33);
+  color: #dcdcdc;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#tutorials-card a {
+  display: inline-block;
+  margin-top: 18px;
+  background-color: #e44d26;
+  color: white;
   text-decoration: none;
-  background-color: #444444;
-  color: #fdfdfd;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
-.tutorial-card .btn:hover {
-  background-color: #666666;
+#tutorials-card a:hover {
+  background-color: #f16529;
 }
+
+/* About Section */
