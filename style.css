@@ -363,6 +363,76 @@ nav {
   background-color: #f16529;
 }
 
+/* NotesVault Learning Features */
+#learning-features {
+  color: rgb(235, 235, 235);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#learning-features .content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#learning-features h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5em;
+}
+
+#learning-features p {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: rgba(237, 234, 234, 0.724);
+  max-width: 700px;
+  margin: 1em auto;
+}
+
+.scroller-box {
+  overflow: hidden;
+  position: relative;
+  margin: 2em 0;
+}
+
+.scroller-box .logos {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.scroller-box .logos img {
+  width: 80px;
+  height: auto;
+  margin-right: 40px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.btn-explore {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #7b3fe4 0%, #9c45ff 100%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-explore:hover {
+  background: linear-gradient(135deg, #9c45ff 0%, #7b3fe4 100%);
+  transform: translateY(-3px);
+}
+
 /* About Section */
 #about {
   text-align: center;
