@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css" />
     <title>NotesVault - The Modern Learning Playground</title>
@@ -139,9 +143,12 @@
     </section>
 
     <!-- About Section -->
-     <section id="about">
+    <section id="about">
       <h2>Who <span>I am</span></h2>
-      <p>A MERN stack developer building web applications and documenting the learning journey.</p>
+      <p>
+        A MERN stack developer building web applications and documenting the
+        learning journey.
+      </p>
 
       <div class="about-container">
         <div id="about-me">
@@ -149,7 +156,13 @@
             <img src="./Images/My Image.png" alt="My Image" />
           </div>
           <div id="about-elements">
-            <h3>Ranjay Kumar <img src="https://cdn-icons-png.flaticon.com/128/1343/1343568.png" alt="verified-badge"></h3>
+            <h3>
+              Ranjay Kumar
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/1343/1343568.png"
+                alt="verified-badge"
+              />
+            </h3>
             <span class="badge-one">Aspiring MERN Stack Developer</span>
             <span class="badge-two">Learning C, C++, DSA & STL</span>
             <div id="tiny-button">
@@ -157,13 +170,123 @@
               <span>MERN Stack Developer</span>
               <span>Web Application Developer</span>
             </div>
-            <p>Hello! I'm a third-year BCA student passionate about building full-stack web applications. I'm learning the MERN stack and actively working on projects, seeking opportunities to apply my skills in real-world environments.</p>
+            <p>
+              Hello! I'm a third-year BCA student passionate about building
+              full-stack web applications. I'm learning the MERN stack and
+              actively working on projects, seeking opportunities to apply my
+              skills in real-world environments.
+            </p>
             <a class="primary-btn" href="#">View My Projects</a>
-            <a class="secondary-btn" href="https://www.linkedin.com/in/ranjay849/" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+            <a
+              class="secondary-btn"
+              href="https://www.linkedin.com/in/ranjay849/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on LinkedIn</a
+            >
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-form-box">
+          <h2>Connect <span>With Me</span></h2>
+          <p>
+            Have a project idea or need a MERN Stack developer? Let's build
+            something amazing together.
+          </p>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Email Address *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-phone"></i>
+                  <input
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Subject *</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-tag"></i>
+                  <input
+                    type="text"
+                    placeholder="What's this about?"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Message *</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-comment-dots"></i>
+                <textarea
+                  rows="5"
+                  placeholder="Tell us more about your inquiry..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="send-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-illustration">
+          <div class="status-tag online">● Online</div>
+          <img
+            src="https://coderarmy.in/assets/images/webp/contactmewebp.jpg"
+            alt="Mail Illustration"
+          />
+          <div class="status-tag quick">✔ Quick Response</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+     
 
     <!-- JS Link -->
     <script src="./main.js"></script>
