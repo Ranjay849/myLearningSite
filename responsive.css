@@ -1,11 +1,67 @@
 /* Extra Small: Mobile Portrait */
 @media (max-width: 480px) {
-    
+  .hamburger {
+    display: flex;
+  }
+
+  #middle-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #333;
+    border-radius: 0;
+  }
+
+  #middle-links.active {
+    display: flex;
+  }
+
+  #middle-links a {
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+  }
+
+  #middle-links a:hover {
+    background-color: rgba(37, 37, 37, 0.9);
+    color: white;
+  }
 }
 
 /* Small: Mobile Landscape / Small Tablets */
 @media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
 
+  #middle-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #333;
+    border-radius: 0;
+  }
+
+  #middle-links.active {
+    display: flex;
+  }
+
+  #middle-links a {
+    text-align: left;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+
+  #middle-links a:hover {
+    background-color: rgba(37, 37, 37, 0.9);
+    color: white;
+  }
 }
 
 /* Medium: Tablets and small laptops */
